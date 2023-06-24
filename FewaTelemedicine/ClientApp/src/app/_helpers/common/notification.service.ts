@@ -83,9 +83,14 @@ export class NotificationService {
   }
 
   public Connect() {
+    console.log("inside COnndect");
     this.createConnection();
+    console.log("createConnection done");
     this.registerOnServerEvents();
+    console.log("registerOnServerEvents done");
     this.startConnection();
+    console.log("startConnection done");
+
   }
   private createConnection() {
     this._hubConnection = new HubConnectionBuilder()

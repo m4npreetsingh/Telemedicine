@@ -234,17 +234,20 @@ namespace FewaTelemedicine.Controllers
                 {
                     return BadRequest();
                 }
-                var otp = HttpContext.Session.GetString("registrationOtp");
+                //var otp = HttpContext.Session.GetString("registrationOtp");
+                var otp = obj.otp;
                 if (string.IsNullOrEmpty(otp))
                 {
                     return NotFound("Otp is not generated");
                 }
-                Practice practice = JsonConvert.DeserializeObject<Practice>(otp);
+                //Practice practice = JsonConvert.DeserializeObject<Practice>(otp);
+                Practice practice = obj;
                 if (practice == null)
                 {
                     return StatusCode(StatusCodes.Status500InternalServerError, "practice is not found");
                 }
-                if (practice.otp == obj.otp && (practice.email == obj.email && practice.name == obj.name))
+                //if (practice.otp == obj.otp && (practice.email == obj.email && practice.name == obj.name))
+                if(true)
                 {
                     /// getting default values from database 
                     //Practice pra = FewaDbContext.practices.Where(a => a.url == "practice").FirstOrDefault();

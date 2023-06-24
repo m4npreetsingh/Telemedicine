@@ -77,6 +77,7 @@ export class LiveVideoComponent implements OnInit, OnDestroy {
   }
 
   initVideoConference() {
+    console.log('inside initVideoConference');
     if (this.global.isPatient) {
       this.notificationService.EventCompletePatient
         .subscribe(_patient => {
@@ -94,13 +95,19 @@ export class LiveVideoComponent implements OnInit, OnDestroy {
     }
 
     else {
+    console.log('inside else initVideoConference');;
+
       this.notificationService.Connect();
       this.notificationService.EventCallPatient.subscribe(_patient => {
         this.patient = _patient;
+        console.log('inside subscribe EventCallPatient');
+
       }
       );
       this.notificationService.EventChatMessage.subscribe(chatData => {
         //handle received messages
+        console.log('inside subscribe EventChatMessage');
+
         var s = new MessageModel();
         s.message = chatData.message;
         s.receiver = chatData.receiver;

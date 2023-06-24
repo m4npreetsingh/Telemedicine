@@ -25,6 +25,7 @@ export class JitsiComponent implements OnInit, OnDestroy {
 
   private api: any;
   ngOnInit() {
+    console.log("inside jitsiiii");
     this.api = new JitsiMeetExternalAPI("meet.jit.si", this.callOptions);
     this.handleAPI();
 }

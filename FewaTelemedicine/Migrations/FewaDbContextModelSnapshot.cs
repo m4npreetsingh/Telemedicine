@@ -215,7 +215,7 @@ namespace FewaTelemedicine.Migrations
                             password = "FHBsjQhfB78CnRY7uVquqA==",
                             practice = "practice",
                             practiceId = 1,
-                            roomName = "aab0ad23-0ea5-442a-bff8-a554ce9cc487-name",
+                            roomName = "45d8c57f-3570-4f78-b828-cc5b1cad952a-name",
                             url = "provider",
                             userName = "provider"
                         },
@@ -225,7 +225,7 @@ namespace FewaTelemedicine.Migrations
                             password = "ajNJkHEqM5bu0szpIIhwzw==",
                             practice = "practice1",
                             practiceId = 2,
-                            roomName = "4f65c67e-470e-47f0-a50b-23a1444d79cc-name",
+                            roomName = "38378496-0295-41bd-ab70-fce0b4662876-name",
                             url = "provider1",
                             userName = "doctor"
                         });

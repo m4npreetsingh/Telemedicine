@@ -4,7 +4,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace FewaTelemedicine.Migrations
 {
-    public partial class v1 : Migration
+    public partial class m : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -136,8 +136,8 @@ namespace FewaTelemedicine.Migrations
                 columns: new[] { "providerId", "designation", "email", "image", "medicalDegree", "mobileNumber", "name", "nameTitle", "password", "practice", "practiceId", "roomKey", "roomName", "url", "userName" },
                 values: new object[,]
                 {
-                    { 1, null, null, null, null, null, null, null, "FHBsjQhfB78CnRY7uVquqA==", "practice", 1, null, "aab0ad23-0ea5-442a-bff8-a554ce9cc487-name", "provider", "provider" },
-                    { 2, null, null, null, null, null, null, null, "ajNJkHEqM5bu0szpIIhwzw==", "practice1", 2, null, "4f65c67e-470e-47f0-a50b-23a1444d79cc-name", "provider1", "doctor" }
+                    { 1, null, null, null, null, null, null, null, "FHBsjQhfB78CnRY7uVquqA==", "practice", 1, null, "45d8c57f-3570-4f78-b828-cc5b1cad952a-name", "provider", "provider" },
+                    { 2, null, null, null, null, null, null, null, "ajNJkHEqM5bu0szpIIhwzw==", "practice1", 2, null, "38378496-0295-41bd-ab70-fce0b4662876-name", "provider1", "doctor" }
                 });
 
             migrationBuilder.CreateIndex(

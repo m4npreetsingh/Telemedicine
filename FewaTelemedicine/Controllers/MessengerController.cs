@@ -229,6 +229,7 @@ namespace FewaTelemedicine.Controllers
                         return false;
                     }
                     obj.otp = GenerateOtp(obj.email);
+                    return true;
                     var result = await _messengerService.SendRegistrationOTP(obj.name, obj.email, obj.otp, Request.Scheme + "://" + Request.Host.Value);
                     if (result == true)
                     {
